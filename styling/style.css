@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root{
+    --Full-Slider-Bar: hsl(174, 76%, 80%);
+    --slider-bg: hsl(174, 86%, 45%);
+    --discount-bg: hsl(14, 92%, 95%);
+    --discount-text: hsl(15, 100%, 70%);
+    --cta-text: hsl(226, 100%, 87%);
+    --main-component-bg: hsl (0, 0%, 100%);
+    --body-bg: hsl(230, 100%, 99%);
+    --empty-slider-bar: hsl(224, 65%, 95%);
+    --toggle-bg: hsl(223, 50%, 87%);
+    --text: hsl(225, 20%, 60%);
+    --text-cta-bg: hsl(227, 35%, 25%);
+    --my-font:  'Manrope', sans-serif;
+}
+
+body{
+    font-family: var(--my-font);
+    background-image: url('/images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+header{
+    background-image: url('/images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 2rem 0;
+}
+
+header h1{
+    font-size: 25px;
+}
+
+header p{
+    margin: 0;
+    color: var(--text);
+}
+
+.main-component{
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: -4px 6px 7px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 6px 7px -3px rgba(0,0,0,0.75);
+    box-shadow: -4px 6px 7px -3px rgba(0,0,0,0.75);
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.display{
+    border-bottom: 5px solid var(--body-bg);
+    padding: 1rem;
+}
+
+.pageview-display{
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.price-display{
+    font-size: 18px;
+    color: var(--text);
+    margin: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-display #dollar-display{
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}
+
+input[type=range] {
+    height: 35px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation-delay: 0.1s;
+    box-shadow: 1px 1px 1px #A5F3EB;
+    background: #A5F3EB;
+    border-radius: 5px;
+    border: 1px solid #A5F3EB;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 5px 5px 10px #94FFFB;
+    border: 1px solid #08DEFF;
+    height: 23px;
+    width: 23px;
+    border-radius: 50px;
+    background: #05FFBC;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9.5px;
+    background-image: url(/images/icon-slider.svg);
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #A5F3EB;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation-name: 0.1s;
+    box-shadow: 1px 1px 1px #A5F3EB;
+    background: #A5F3EB;
+    border-radius: 5px;
+    border: 1px solid #A5F3EB;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 5px 5px 10px #94FFFB;
+    border: 1px solid #08DEFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #05FFBC;
+    cursor: pointer;
+    background-image: url(/images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation-delay: 0.1s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: #A5F3EB;
+    border: 1px solid #A5F3EB;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #A5F3EB;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: #A5F3EB;
+    border: 1px solid #A5F3EB;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #A5F3EB;
+  }
+
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 5px 5px 10px #94FFFB;
+    border: 1px solid #08DEFF;
+    height: 23px;
+    width: 23px;
+    border-radius: 50px;
+    background: #05FFBC;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #A5F3EB;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #A5F3EB;
+  }
+  
+.discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.discount p{
+    margin:5px;
+}
+
+.discount #dis{
+    padding: 3px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left:1px;
+    right: -1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(4px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.submit-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--text);
+}
+
+.submit-form p{
+    margin: 1rem;
+}
+
+.submit-form button{
+    margin: 2rem auto;
+    font-size: 15px;
+    font-family: var(--my-font);
+    font-weight: bolder;
+    border-radius: 25px;
+    border: none;
+    background:var(--text-cta-bg) ;
+    color: var(--cta-text);
+    height: 3rem;
+    width: 12rem;
+    transition: all ease 0.3s;
+}
+
+.submit-form button:hover{
+    background-color:hsl(227, 34%, 37%) ;
+}
+
+@media screen and (min-width: 600px){
+    .main-component{
+        width: 65%;
+        margin: 3rem auto;
+    }
+
+    .display{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price-display{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    #price-slider{
+        grid-column: 1 /span 2;
+    }
+
+    .discount{
+        grid-column: 1 /span 2;
+    }
+
+    .submit-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem;
+    }
+}
